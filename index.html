@@ -1,12 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>競馬サイト</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#064a2b">
+  <title>社員旅行記念 人間競馬</title>
+  <style>
+    :root{--green:#064a2b;--green2:#0b6b3d;--gold:#d6b15e;--cream:#f7f2e5;--ink:#172019;--muted:#667068}
+    *{box-sizing:border-box} body{margin:0;color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;background:#eef2ed}
+    .hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,#042f1c,#087143);padding:28px 18px 34px;border-bottom:6px solid var(--gold)}
+    .hero:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 24px,rgba(255,255,255,.035) 25px 26px);pointer-events:none}
+    .wrap{width:min(1120px,calc(100% - 28px));margin:auto;position:relative;z-index:1}
+    .eyebrow{font-weight:900;letter-spacing:.16em;color:#ffe5a2;font-size:.78rem}.hero h1{margin:.35rem 0 .2rem;font-family:serif;font-size:clamp(2rem,6vw,4.4rem);line-height:1;text-shadow:0 3px 0 rgba(0,0,0,.25)}
+    .hero p{margin:.7rem 0 0;font-weight:700}.race-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{border:1px solid rgba(255,255,255,.45);background:rgba(0,0,0,.16);padding:7px 11px;border-radius:999px;font-size:.8rem;font-weight:800}
+    main{padding:28px 0 56px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:14px}.section-title h2{margin:0;color:var(--green);font-family:serif;font-size:1.65rem}.section-title span{font-size:.78rem;color:var(--muted)}
+    .board{background:white;border:1px solid #d3dbd5;border-radius:16px;box-shadow:0 12px 32px rgba(9,41,24,.10);overflow:hidden}.board-head{display:grid;grid-template-columns:68px 100px 1.5fr 1.2fr 90px;background:#183a28;color:#fff;font-size:.72rem;font-weight:900;letter-spacing:.08em;padding:10px 12px}.horse{display:grid;grid-template-columns:68px 100px 1.5fr 1.2fr 90px;align-items:center;min-height:118px;border-top:1px solid #e4e9e5;padding:10px 12px;transition:.18s}.horse:hover{background:#fbfaf3;transform:translateX(3px)}
+    .frame{width:48px;height:48px;display:grid;place-items:center;border-radius:8px;font-family:Georgia,serif;font-size:1.55rem;font-weight:900;border:2px solid #222}.f1{background:#fff}.f2{background:#222;color:#fff}.f3{background:#e73535;color:#fff}.f4{background:#356fd4;color:#fff}
+    .portrait{width:80px;height:92px;object-fit:cover;object-position:center top;border-radius:9px;background:#dce5df;border:3px solid #fff;box-shadow:0 2px 10px #aeb8b1}.horse-name{font-family:serif;font-weight:900;color:#053d24;font-size:clamp(1.05rem,2.3vw,1.45rem);letter-spacing:.04em}.jockey{margin-top:6px;font-size:.88rem;font-weight:800}.dept{color:var(--muted);font-size:.8rem;line-height:1.45}.odds{text-align:center}.odds strong{display:block;color:#b23222;font-family:Georgia,serif;font-size:1.45rem}.odds small{color:var(--muted)}
+    .empty{color:#98a19a;font-size:.8rem;font-style:italic}.mc{margin-top:28px;background:linear-gradient(135deg,#fff,#f5ead2);border:1px solid #d7c18e;border-radius:16px;padding:18px;display:grid;grid-template-columns:100px 1fr;gap:18px;align-items:center;box-shadow:0 10px 28px rgba(67,47,9,.10)}.mc img{width:100px;height:118px;object-fit:cover;object-position:center top;border-radius:12px;background:#ddd;border:4px solid var(--gold)}.mc-label{font-size:.75rem;font-weight:900;color:#8b6110;letter-spacing:.14em}.mc h2{font-family:serif;margin:.25rem 0;color:#3f2f12}.mc p{margin:.3rem 0;color:#5f5b50;font-size:.9rem}
+    footer{text-align:center;color:#758078;font-size:.75rem;padding:20px}.notice{margin:14px 0 0;font-size:.72rem;color:#dbe9df}
+    @media(max-width:720px){.board-head{display:none}.horse{grid-template-columns:52px 76px 1fr 70px;min-height:112px;padding:10px 8px}.portrait{width:66px;height:82px}.dept{grid-column:3/5;margin-top:6px}.odds{grid-column:4;grid-row:1}.horse-info{grid-column:3}.frame{width:42px;height:42px}.mc{grid-template-columns:82px 1fr}.mc img{width:82px;height:100px}}
+  </style>
 </head>
 <body>
-  <h1>競馬サイト</h1>
-  <p>GitHub Pagesで公開できました！</p>
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">COMPANY TRIP SPECIAL RACE</div>
+  <h1>社員旅行記念<br>人間競馬</h1>
+  <p>選ばれし4頭、宴会場に集結。</p>
+  <div class="race-meta"><span class="pill">第1R</span><span class="pill">4頭立て</span><span class="pill">発走時刻 未定</span><span class="pill">宴会場特設コース</span></div>
+  <div class="notice">※本サイトは社員旅行の余興用です。</div>
+</div></header>
+<main><div class="wrap">
+  <div class="section-title"><h2>出走馬一覧</h2><span>ENTRY LIST</span></div>
+  <section class="board" aria-label="出走馬一覧">
+    <div class="board-head"><span>枠</span><span>写真</span><span>馬名・騎手</span><span>所属</span><span>単勝</span></div>
+
+    <article class="horse"><div class="frame f1">1</div><img class="portrait" src="img/nie.png" alt="ニエバクシンオー"><div class="horse-info"><div class="horse-name">ニエバクシンオー</div><div class="jockey">にえたに こうき</div></div><div class="dept">第1技術統括部第2部第2課<br><span class="empty">キャッチコピー未登録</span></div><div class="odds"><strong>--.-</strong><small>倍</small></div></article>
+
+    <article class="horse"><div class="frame f2">2</div><img class="portrait" src="img/has.png" alt="ロープレマスター"><div class="horse-info"><div class="horse-name">ロープレマスター</div><div class="jockey">はせがわ たくま</div></div><div class="dept"><span class="empty">所属未登録<br>キャッチコピー未登録</span></div><div class="odds"><strong>--.-</strong><small>倍</small></div></article>
+
+    <article class="horse"><div class="frame f3">3</div><img class="portrait" src="img/iwa.png" alt="トマサンブラック"><div class="horse-info"><div class="horse-name">トマサンブラック</div><div class="jockey">いわさき とうま</div></div><div class="dept">第1技術統括部第X部第X課<br><span class="empty">キャッチコピー未登録</span></div><div class="odds"><strong>--.-</strong><small>倍</small></div></article>
+
+    <article class="horse"><div class="frame f4">4</div><img class="portrait" src="img/kat.png" alt="アシコシガクガク"><div class="horse-info"><div class="horse-name">アシコシガクガク</div><div class="jockey">かとう がくと</div></div><div class="dept">第1技術統括部第2部第1課<br><span class="empty">キャッチコピー未登録</span></div><div class="odds"><strong>--.-</strong><small>倍</small></div></article>
+  </section>
+
+  <aside class="mc"><img src="img/tak.png" alt="MC TAKA a.k.a. HANA"><div><div class="mc-label">RACE MC</div><h2>TAKA a.k.a. HANA</h2><p>たかぎ はなの</p><p>第X統括部第X部第X課</p><p class="empty">キャッチコピー・特徴は後日公開</p></div></aside>
+</div></main>
+<footer>社員旅行記念 人間競馬 © 2026</footer>
 </body>
 </html>
